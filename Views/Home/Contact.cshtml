@@ -1,0 +1,75 @@
+@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<section class="contact container py-5">
+  <div class="text-center mb-5">
+    <h2 class="text-warning fw-bold">Get in Touch</h2>
+    <p class="text-muted w-75 mx-auto">
+      Have questions, feedback, or travel ideas? We’d love to hear from you.
+      Whether you’re planning a dream trip or just exploring possibilities, the WanderScape team is ready to help.
+    </p>
+  </div>
+
+  <div class="row g-5">
+    <!-- Contact Form -->
+    <div class="col-lg-6">
+      <div class="bg-light p-4 rounded shadow-sm">
+        <h5 class="fw-bold mb-3">Send us a Message</h5>
+        <form>
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Name</label>
+            <input type="text" class="form-control" placeholder="Your full name" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Email</label>
+            <input type="email" class="form-control" placeholder="Your email address" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Subject</label>
+            <input type="text" class="form-control" placeholder="Subject (optional)">
+          </div>
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Message</label>
+            <textarea class="form-control" rows="4" placeholder="Write your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-warning text-dark fw-semibold w-100 py-2">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Contact Info + Map -->
+    <div class="col-lg-6">
+      <div class="h-100 d-flex flex-column justify-content-between">
+        <div class="mb-4">
+          <h5 class="fw-bold mb-3">Contact Information</h5>
+          <p class="mb-2"><i class="bi bi-telephone-fill text-warning me-2"></i> +91 9876543210</p>
+          <p class="mb-2"><i class="bi bi-envelope-fill text-warning me-2"></i> info@wanderscape.com</p>
+          <p class="mb-2"><i class="bi bi-geo-alt-fill text-warning me-2"></i> 123 Beach Road, Goa, India</p>
+
+          <div class="mt-4">
+            <h6 class="fw-bold mb-2">Business Hours</h6>
+            <p class="small text-muted mb-0">Monday – Friday: 9:00 AM – 6:00 PM</p>
+            <p class="small text-muted">Saturday: 10:00 AM – 3:00 PM</p>
+          </div>
+
+          <div class="mt-4">
+            <h6 class="fw-bold mb-2">Follow Us</h6>
+            <a href="#" class="text-warning me-3 fs-5"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-warning me-3 fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-warning me-3 fs-5"><i class="bi bi-twitter-x"></i></a>
+          </div>
+        </div>
+
+        <!-- Google Map -->
+        <div class="rounded overflow-hidden shadow-sm">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d984956.6951684518!2d73.34684721413633!3d15.350084481260595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfba106336b741%3A0xeaf887ff62f34092!2sGoa!5e0!3m2!1sen!2sin!4v1762320378200!5m2!1sen!2sin"
+            width="100%" height="300" style="border:0;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

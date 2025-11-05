@@ -1,0 +1,115 @@
+@{
+  ViewData["Title"] = "Packages";
+}
+
+<section class="packages py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-warning">Exclusive Travel Packages</h2>
+      <p class="text-muted w-75 mx-auto">
+        Discover handpicked travel experiences designed for explorers, dreamers, and wanderers.
+        Each package combines breathtaking destinations, cultural immersion, and seamless comfort —
+        crafted to make every journey unforgettable.
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Package 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card packages-card-transition border-0 shadow-lg h-100 rounded-4 overflow-hidden">
+          <img src="~/images/packages/europe.jpg" class="card-img-top" alt="Europe Tour">
+          <div class="card-body d-flex flex-column">
+            <h5 class="fw-bold text-dark">European Highlights</h5>
+            <p class="text-muted small flex-grow-1">
+              Experience Europe’s timeless charm — from Parisian boulevards and Roman ruins to Swiss Alps landscapes.
+              Includes guided city tours, fine dining, and 4-star stays.
+            </p>
+            <div class="mt-auto">
+              <p class="fw-bold text-primary mb-2">₹ 1,45,000 / person</p>
+              <a href="@Url.Action("Contact", "Home")" class="btn btn-warning w-100 fw-semibold">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Package 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card packages-card-transition border-0 shadow-lg h-100 rounded-4 overflow-hidden">
+          <img src="~/images/packages/asia.jpg" class="card-img-top" alt="Asia Tour">
+          <div class="card-body d-flex flex-column">
+            <h5 class="fw-bold text-dark">Asian Adventure</h5>
+            <p class="text-muted small flex-grow-1">
+              Discover tropical paradise and cultural beauty with this 7-day Bali & Phuket getaway.
+              Adventure, relaxation, and vibrant nightlife — all in one incredible trip.
+            </p>
+            <div class="mt-auto">
+              <p class="fw-bold text-primary mb-2">₹ 98,000 / person</p>
+              <a href="@Url.Action("Contact", "Home")" class="btn btn-warning w-100 fw-semibold">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Package 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card packages-card-transition border-0 shadow-lg h-100 rounded-4 overflow-hidden">
+          <img src="~/images/packages/japan.jpg" class="card-img-top" alt="Japan">
+          <div class="card-body d-flex flex-column">
+            <h5 class="fw-bold text-dark">Japan Explorer</h5>
+            <p class="text-muted small flex-grow-1">
+              A cultural deep dive into Tokyo and Kyoto. Witness ancient temples, neon skylines,
+              cherry blossoms, and tea ceremonies in the heart of Japan.
+            </p>
+            <div class="mt-auto">
+              <p class="fw-bold text-primary mb-2">₹ 1,10,000 / person</p>
+              <a href="@Url.Action("Contact", "Home")" class="btn btn-warning w-100 fw-semibold">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bonus Package -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card packages-card-transition border-0 shadow-lg h-100 rounded-4 overflow-hidden">
+          <img src="~/images/packages/maldive.png" class="card-img-top" alt="Maldives">
+          <div class="card-body d-flex flex-column">
+            <h5 class="fw-bold text-dark">Maldives Escape</h5>
+            <p class="text-muted small flex-grow-1">
+              Dive into luxury with overwater villas, crystal lagoons, and romantic sunsets.
+              Perfect for honeymoons or anyone seeking peace and paradise.
+            </p>
+            <div class="mt-auto">
+              <p class="fw-bold text-primary mb-2">₹ 1,25,000 / person</p>
+              <a href="@Url.Action("Contact", "Home")" class="btn btn-warning w-100 fw-semibold">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bonus Package -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card packages-card-transition border-0 shadow-lg h-100 rounded-4 overflow-hidden">
+          <img src="~/images/packages/africa.png" class="card-img-top" alt="Safari">
+          <div class="card-body d-flex flex-column">
+            <h5 class="fw-bold text-dark">African Safari</h5>
+            <p class="text-muted small flex-grow-1">
+              Witness the Big Five up close. A wild 8-day adventure through Kenya’s national parks, 
+              luxury camps, and unforgettable sunrise safaris.
+            </p>
+            <div class="mt-auto">
+              <p class="fw-bold text-primary mb-2">₹ 1,35,000 / person</p>
+              <a href="@Url.Action("Contact", "Home")" class="btn btn-warning w-100 fw-semibold">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call-to-Action -->
+    <div class="text-center mt-100">
+      <h5 class="fw-bold text-dark">Need a Custom Trip?</h5>
+      <p class="text-muted">We design personalized travel experiences based on your dream destination and budget.</p>
+      <a href="@Url.Action("Contact", "Home")" class="btn btn-outline-warning fw-semibold px-4">Plan My Trip</a>
+    </div>
+  </div>
+</section>

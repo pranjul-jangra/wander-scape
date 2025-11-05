@@ -1,0 +1,108 @@
+@{
+    ViewData["Title"] = "Destinations";
+}
+
+<!-- Intro Section -->
+<section class="py-5 bg-light border-bottom">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-3 text-warning">Popular Destinations</h2>
+        <p class="text-muted mx-auto" style="max-width: 700px;">
+            Whether you dream of sipping espresso under the Eiffel Tower or wandering through Kyoto’s timeless temples,
+            WanderScape curates travel experiences that blend culture, comfort, and adventure.
+        </p>
+    </div>
+</section>
+
+<!-- Destinations Grid -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-12 col-sm-6 col-lg-4 scale-img">
+                <div class="card dest-card border-0 shadow-sm h-100">
+                    <img src="~/images/destinations/paris.png" class="card-img-top" alt="Paris">
+                    <div class="card-body">
+                        <h5>Paris, France</h5>
+                        <p class="small text-muted mb-0">Romance, art, cafés, and the Eiffel Tower experience.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 scale-img">
+                <div class="card dest-card border-0 shadow-sm h-100">
+                    <img src="~/images/destinations/bali.png" class="card-img-top" alt="Bali">
+                    <div class="card-body">
+                        <h5>Bali, Indonesia</h5>
+                        <p class="small text-muted mb-0">Peaceful beaches, spiritual temples, and lush greenery.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 scale-img">
+                <div class="card dest-card border-0 shadow-sm h-100">
+                    <img src="~/images/destinations/kyoto.png" class="card-img-top" alt="Kyoto">
+                    <div class="card-body">
+                        <h5>Kyoto, Japan</h5>
+                        <p class="small text-muted mb-0">Historic temples, tranquil gardens, and cultural charm.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 scale-img">
+                <div class="card dest-card border-0 shadow-sm h-100">
+                    <img src="~/images/destinations/dubai.png" class="card-img-top" alt="Dubai">
+                    <div class="card-body">
+                        <h5>Dubai, UAE</h5>
+                        <p class="small text-muted mb-0">Luxury, desert adventures, and futuristic skyline views.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 scale-img">
+                <div class="card dest-card border-0 shadow-sm h-100">
+                    <img src="~/images/destinations/rome.png" class="card-img-top" alt="Rome">
+                    <div class="card-body">
+                        <h5>Rome, Italy</h5>
+                        <p class="small text-muted mb-0">Colosseum, Vatican City, and world-class Italian cuisine.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-4 scale-img">
+                <div class="card dest-card border-0 shadow-sm h-100">
+                    <img src="~/images/destinations/cape.png" class="card-img-top" alt="Cape Town">
+                    <div class="card-body">
+                        <h5>Cape Town, South Africa</h5>
+                        <p class="small text-muted mb-0">Table Mountain views and breathtaking coastal drives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-5 dest-testimonial text-white text-center">
+    <div class="container">
+        <h3 class="fw-bold mb-4">What Our Travelers Say</h3>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <blockquote class="blockquote">
+                    <p class="mb-4 fst-italic">
+                        “WanderScape made our honeymoon trip to Paris absolutely magical.
+                        From hotel bookings to guided tours — everything was seamless!”
+                    </p>
+                    <footer class="blockquote-footer text-white-50">Aarav & Meera, India</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-5 text-center bg-light">
+    <div class="container">
+        <h4 class="fw-bold mb-3">Ready to Start Your Journey?</h4>
+        <p class="text-muted mb-4">Let our travel experts help you craft your dream vacation today.</p>
+        <a href="@Url.Action("Contact", "Home")" class="btn btn-warning px-4 py-2">Contact Us</a>
+    </div>
+</section>

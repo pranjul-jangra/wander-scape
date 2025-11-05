@@ -1,0 +1,7 @@
+D:\college projects\WanderScape\publish\WanderScape.exe
+D:\college projects\WanderScape\publish\appsettings.Development.json
+D:\college projects\WanderScape\publish\appsettings.json
+D:\college projects\WanderScape\publish\WanderScape.dll
+D:\college projects\WanderScape\publish\WanderScape.deps.json
+D:\college projects\WanderScape\publish\WanderScape.runtimeconfig.json
+D:\college projects\WanderScape\publish\WanderScape.pdb

@@ -1,8 +1,99 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!-- HERO SECTION -->
+<section class="hero-section d-flex align-items-center text-light position-relative">
+  <div class="hero-overlay"></div>
+  <div class="container position-relative z-2">
+    <div class="row align-items-center">
+      <div class="col-md-7">
+        <h1 class="display-4 fw-bold mb-3">Discover the World with <span class="text-warning">WanderScape</span></h1>
+        <p class="lead mb-4">
+          Handpicked destinations, personalized travel packages, and breathtaking experiences — 
+          crafted for those who crave adventure, culture, and serenity.
+        </p>
+        <a class="btn btn-lg btn-warning me-3 shadow-sm" href="@Url.Action("Destinations","Home")">Explore Destinations</a>
+        <a class="btn btn-lg btn-outline-light shadow-sm" href="@Url.Action("Packages","Home")">View Packages</a>
+      </div>
+      <div class="col-md-5 d-none d-md-block text-center">
+        <img src="~/images/aeroplane.png" alt="aeroplane" class="img-fluid floating-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED DESTINATIONS -->
+<section class="py-5">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="h3 fw-bold">Featured Destinations</h2>
+      <a href="@Url.Action("Destinations","Home")" class="text-decoration-none text-warning fw-semibold">See all →</a>
+    </div>
+
+    <div class="row g-4">
+      @* Destination cards *@
+      @{
+          var destinations = new[] {
+              new { Name = "Paris, France", Desc = "Romantic cityscapes and world-class museums.", Img = "paris.png" },
+              new { Name = "Bali, Indonesia", Desc = "Beaches, temples, and lush rice terraces.", Img = "bali.png" },
+              new { Name = "Kyoto, Japan", Desc = "Ancient temples, cherry blossoms, and rich traditions.", Img = "kyoto.png" },
+              new { Name = "Santorini, Greece", Desc = "Whitewashed houses and sunsets over the Aegean.", Img = "greece.png" },
+              new { Name = "Dubai, UAE", Desc = "Luxury shopping, desert safaris, and futuristic architecture.", Img = "dubai.png" },
+              new { Name = "Swiss Alps", Desc = "Majestic peaks and scenic train routes.", Img = "alps.png" }
+          };
+      }
+
+      @foreach (var d in destinations)
+      {
+          <div class="col-12 col-sm-6 col-lg-4">
+              <div class="card card-dest border-0 shadow-sm h-100">
+                  <img src="~/images/destinations/@d.Img" class="card-img-top rounded-top" alt="@d.Name">
+                  <div class="card-body">
+                      <h5 class="card-title fw-semibold">@d.Name</h5>
+                      <p class="card-text text-muted small mb-2">@d.Desc</p>
+                      <a class="stretched-link text-decoration-none text-warning fw-semibold" href="@Url.Action("Destinations","Home")">View More →</a>
+                  </div>
+              </div>
+          </div>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Why Travel with WanderScape?</h2>
+      <p class="text-muted">We don’t just plan trips — we craft unforgettable journeys.</p>
+    </div>
+    <div class="row text-center g-4">
+      <div class="col-md-4">
+        <i class="bi bi-globe2 fs-1 text-warning mb-3"></i>
+        <h5 class="fw-semibold">Global Reach</h5>
+        <p class="text-muted small">Explore handpicked destinations across 40+ countries, tailored to every kind of traveler.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="bi bi-star-fill fs-1 text-warning mb-3"></i>
+        <h5 class="fw-semibold">Curated Experiences</h5>
+        <p class="text-muted small">Each tour and package is designed by travel experts who know what makes a trip truly memorable.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="bi bi-heart-fill fs-1 text-warning mb-3"></i>
+        <h5 class="fw-semibold">Trusted by Travelers</h5>
+        <p class="text-muted small">Thousands of happy explorers trust WanderScape for their global adventures.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="cta-section text-center text-light py-5 position-relative">
+  <div class="cta-overlay"></div>
+  <div class="container position-relative z-2">
+    <h2 class="display-6 fw-bold mb-3">Ready for your next adventure?</h2>
+    <p class="lead mb-4">Plan it effortlessly with WanderScape — your gateway to the world’s most beautiful places.</p>
+    <a href="@Url.Action("Contact","Home")" class="btn btn-lg btn-warning shadow-lg">Get in Touch</a>
+  </div>
+</section>
