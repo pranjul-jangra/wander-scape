@@ -1,0 +1,207 @@
+:root {
+  --primary: #0077b6;
+  --accent: #ffb703;
+  --neutral: #f8f9fa;
+  --text: #222;
+  font-family:
+    "Poppins",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial;
+}
+
+body {
+  color: var(--text);
+  background: #fff;
+  padding-top: 60px;
+}
+
+.mt-100{
+  margin-top: 100px;
+}
+
+/* HERO */
+.hero-section {
+  min-height: 100vh;
+  background-image: url("/images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 6rem 0;
+  overflow: hidden;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: url("../images/hero.jpg") no-repeat center center/cover;
+  z-index: 0;
+}
+.hero-section .container {
+  z-index: 2;
+}
+.hero-section h1 {
+  color: #fff;
+  text-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.floating-img {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+/* Cards */
+.card-dest {
+  overflow: hidden;
+  border: none;
+  border-radius: 12px;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+  box-shadow: 0 6px 20px rgba(18, 18, 18, 0.06);
+}
+.card-dest img {
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.card-dest:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(18, 18, 18, 0.12);
+}
+
+.card-dest:hover img {
+  transform: scale(1.05);
+}
+
+.cta-section {
+  background: url("../images/cta-bg.jpg") no-repeat center center/cover;
+}
+.cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+.cta-section h2,
+.cta-section p {
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* DESTINATIONS GRID */
+.dest-card {
+  overflow: hidden;
+  transition: transform 0.25s ease;
+}
+.dest-card img {
+  height: 240px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  transition: transform 0.4s ease;
+}
+.dest-card h5 {
+  font-weight: 600;
+}
+.dest-card:hover {
+  transform: translateY(-4px);
+}
+
+.dest-card:hover img {
+  transform: scale(1.05);
+}
+
+.dest-testimonial {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.dest-testimonial h3,
+.dest-testimonial p {
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* PACKAGES */
+.pkg-card img {
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+.pkg-card h5 {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.pkg-card .btn {
+  margin-top: auto;
+}
+.pkg-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.25s ease;
+}
+
+.packages-card-transition {
+  transition: transform 0.25s ease;
+  overflow: hidden;
+}
+.packages-card-transition img {
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  transition: transform 0.4s ease;
+}
+.packages-card-transition:hover {
+  transform: translateY(-4px);
+}
+.packages-card-transition:hover img {
+  transform: scale(1.05);
+}
+
+.footer {
+  background-color: #111;
+  letter-spacing: 0.3px;
+}
+
+.footer h5,
+.footer h4 {
+  letter-spacing: 1px;
+}
+
+.footer-link {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffb703;
+}
+
+.social-links a {
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffb703;
+  transform: translateY(-3px);
+}
+
+/* responsive tweaks */
+@media (max-width: 767px) {
+  .hero-section {
+    padding: 3.5rem 0;
+    min-height: 52vh;
+  }
+  .card-dest img {
+    height: 180px;
+  }
+}
