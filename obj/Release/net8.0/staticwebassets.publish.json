@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yxT5CE27f+zcqOgzKpct2r+N0yAGjxGwPnjFY1W7L2g=",
+  "Hash": "TZCfjUooUGD5RL2echjeIGmVgdQB8funxXe2hB8GI4o=",
   "Source": "WanderScape",
   "BasePath": "_content/WanderScape",
   "Mode": "Default",
@@ -74,12 +74,12 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\college projects\\WanderScape\\wwwroot\\favicon.png",
+      "Identity": "D:\\college projects\\WanderScape\\wwwroot\\favicon.ico",
       "SourceId": "WanderScape",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\college projects\\WanderScape\\wwwroot\\",
       "BasePath": "_content/WanderScape",
-      "RelativePath": "favicon.png",
+      "RelativePath": "favicon.ico",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -90,7 +90,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.png"
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
       "Identity": "D:\\college projects\\WanderScape\\wwwroot\\images\\about.png",

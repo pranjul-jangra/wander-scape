@@ -28,3 +28,9 @@ D:\college projects\WanderScape\obj\Debug\net8.0\refint\WanderScape.dll
 D:\college projects\WanderScape\obj\Debug\net8.0\WanderScape.pdb
 D:\college projects\WanderScape\obj\Debug\net8.0\WanderScape.genruntimeconfig.cache
 D:\college projects\WanderScape\obj\Debug\net8.0\ref\WanderScape.dll
+D:\college projects\WanderScape\bin\Debug\net8.0\publish\web.config
+D:\college projects\WanderScape\bin\Debug\net8.0\publish\appsettings.Development.json
+D:\college projects\WanderScape\bin\Debug\net8.0\publish\appsettings.json
+D:\college projects\WanderScape\bin\Debug\net8.0\publish\WanderScape.deps.json
+D:\college projects\WanderScape\bin\Debug\net8.0\publish\WanderScape.runtimeconfig.json
+D:\college projects\WanderScape\obj\Debug\net8.0\WanderScape.sourcelink.json

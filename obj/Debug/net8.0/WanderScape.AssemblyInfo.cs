@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WanderScape")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2efc9d68d268d8eeb2343197b4fd1761166e3a4f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f0b0d8a75e5e60a08f01c492517dbd1e5494a7b")]
 [assembly: System.Reflection.AssemblyProductAttribute("WanderScape")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WanderScape")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
